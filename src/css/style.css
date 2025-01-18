@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .component {
+  width: 400px;
+  display: none;
+  border-radius: 30px;
+  padding: 30px;
+  background-color: var(--Dark-Blue);
+}
+
+.component.show {
+  display: block;
+}
+
+.component .star {
+  display: inline-flex;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--Rate-Background);
+}
+
+.component .component-title,
+.component .thanks-title {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--White);
+}
+
+.component .component-text,
+.component .thanks-text {
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--Light-Grey);
+}
+
+.component .feedback {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.feedback .rating {
+  height: 45px;
+  width: 50px;
+}
+
+.feedback .rating a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 15px 20px;
+  background-color: var(--Rate-Background);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--Light-Grey);
+  transition: 0.3s ease-in-out;
+}
+.feedback .rating a.checked {
+  background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+}
+.feedback .rating a:hover {
+  background-color: var(--Orange);
+  color: var(--Very-Dark-Blue);
+}
+.feedback .rating a:active {
+  scale: .95;
+}
+
+.component .btn-submit {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 0;
+  background-color: var(--Orange);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+  cursor: pointer;
+}
+.component .btn-submit:active {
+  scale: .98;
+  background-color: var(--White);
+}
+
+.component:last-child {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.component .thanks-img {
+  margin-bottom: 30px;
+}
+
+.component .thanks-rate {
+  display: inline-block;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  padding: 8px 20px;
+  background-color: var(--Rate-Background);
+  font-size: 1.5rem;
+  color: var(--Orange);
+}

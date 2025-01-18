@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css">
+  </head>
+  <body>
+    <main class="container">
+      <section class="component show ">
+        <div class="star">
+          <img src="./src/images/icon-star.svg" alt="Ícone de uma estrela"/>
+        </div>
+        <h1 class="component-title">How did we do?</h1>
+        <p class="component-text">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <ul class="feedback">
+          <li class="rating"><a href="#">1</a></li>
+          <li class="rating"><a href="#">2</a></li>
+          <li class="rating"><a href="#">3</a></li>
+          <li class="rating"><a href="#">4</a></li>
+          <li class="rating"><a href="#">5</a></li>
+        </ul>
+        <button type="button" class="btn-submit" id="btn-submit">Submit</button>
+      </section>
+
+      <!-- Thank you -->
+
+      <section class="component">
+        <img src="./src/images/illustration-thank-you.svg" alt="Ilustração de Agradecimento" class="thanks-img"/>
+        <p class="thanks-rate">You selected out of 5</p>
+        <h1 class="thanks-title">Thank you!</h1>
+        <p class="thanks-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </section>
+    </main>
+
+    <script src="./src/js/component.js"></script>
+  </body>
+</html>
