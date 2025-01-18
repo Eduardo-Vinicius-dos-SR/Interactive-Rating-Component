@@ -6,6 +6,10 @@ rateButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
         if (activeButton) {
             activeButton.classList.remove("checked");
+            if (activeButton === button) {
+                activeButton = null;
+                return;
+            }
         }
         button.classList.add("checked");
         activeButton = button;
